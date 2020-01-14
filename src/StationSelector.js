@@ -39,7 +39,8 @@ class StationSelector extends React.Component {
 
     if (selectedLine != null) {
       fetch(
-        "http://transport-api.proxy.pi.mattbattison.net/v3/uk/tube/" +
+        process.env.REACT_APP_TRANSPORT_API_URL +
+          "/v3/uk/tube/" +
           selectedLine +
           ".json"
       )
