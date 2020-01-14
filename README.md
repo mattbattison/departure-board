@@ -6,10 +6,10 @@ Dot-matrix-style departure board for any tube station.
 
 ## Getting Started
 
-1. Clone this repo:
+1. Clone this repo (including submodules to make sure you get the fonts):
 
     ```
-    git clone https://github.com/mattbattison/departure-board
+    git clone --recurse-submodules https://github.com/mattbattison/departure-board
     ```
 
 1. Set appropriate values in ```.env``` for your system:
