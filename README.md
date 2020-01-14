@@ -12,9 +12,9 @@ Dot-matrix-style departure board for any tube station.
     git clone https://github.com/mattbattison/departure-board
     ```
 
-1. Set appropriate values in ```.env``` for your system.
+1. Set appropriate values in ```.env``` for your system:
 
-    - **REACT_APP_TRANSPORT_API_URL** - should be set to the base URL of your _transportapi_ proxy. Currently, this must be pointed at a proxy rather than at ```transportapi.com``` itself so that the proxy can append keys for the API without leaking them to the front-end. I might change this in future so that the keys can be provided as environment variables instead.
+    - **REACT_APP_TRANSPORT_API_URL** - should be set to the base URL of your [transportapi](https://transportapi.com) proxy. Currently, this must be pointed at a proxy rather than at ```transportapi.com``` itself so that the proxy can append keys for the API without leaking them to the front-end. I might change this in future so that the keys can be provided as environment variables instead.
     - **REACT_APP_INITIAL_LINE** - should be set to the short name of the line to display when the app is first loaded e.g. ```jubilee``` for the Jubilee Line. See ```StationSelector.js``` for a full list.
     - **REACT_APP_INITIAL_STATION** - should be set to the code of the station to display when the app is first loaded e.g. ```CNT``` for Canning Town.
 
