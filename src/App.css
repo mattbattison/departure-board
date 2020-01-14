@@ -1,0 +1,42 @@
+body {
+  background: #000;
+}
+
+.board {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  color: yellow;
+  font-family: 'DotMatrix', monospace;
+  text-align: center;
+}
+
+.board table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 2px;
+}
+
+.board table td {
+  background-color: #222;
+  padding: 5px;
+}
+
+.board table td:first-child{
+  text-align: left;
+}
+
+.board table td:last-child{
+  text-align: right;
+}
+
+/* https://github.com/DanielHartUK/Dot-Matrix-Typeface */
+/* SIL Open Font License - http://scripts.sil.org/OFL */
+@font-face {
+  font-family: 'DotMatrix';
+  src: url('/Dot Matrix Regular.eot'),
+       url('/Dot Matrix Regular.ttf') format('truetype'),
+       url('/Dot Matrix Regular.svg') format('svg');
+}

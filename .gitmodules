@@ -1,0 +1,3 @@
+[submodule "src/Dot-Matrix-Typeface"]
+	path = src/Dot-Matrix-Typeface
+	url = https://github.com/mattbattison/Dot-Matrix-Typeface
