@@ -1,6 +1,44 @@
 # Tube Station Departure Board
 
+Dot-matrix-style departure board for any tube station.
+
 ![Departure board screenshot](./doc/departure-board.png)
+
+## Getting Started
+
+1. Clone this repo:
+
+    ```
+    git clone https://github.com/mattbattison/departure-board
+    ```
+
+1. Set appropriate values in ```.env``` for your system.
+
+    - **REACT_APP_TRANSPORT_API_URL** - should be set to the base URL of your _transportapi_ proxy. Currently, this must be pointed at a proxy rather than at ```transportapi.com``` itself so that the proxy can append keys for the API without leaking them to the front-end. I might change this in future so that the keys can be provided as environment variables instead.
+    - **REACT_APP_INITIAL_LINE** - should be set to the short name of the line to display when the app is first loaded e.g. ```jubilee``` for the Jubilee Line. See ```StationSelector.js``` for a full list.
+    - **REACT_APP_INITIAL_STATION** - should be set to the code of the station to display when the app is first loaded e.g. ```CNT``` for Canning Town.
+
+1. Run the production build:
+
+    ```
+    cd departure-board
+    yarn build
+    ```
+
+1. Serve using the ```serve``` package (quick start):
+
+    ```
+    yarn global add serve
+    serve -s build
+    ```
+    
+    or use your faviourite web server (configuration required):
+
+    ```
+    cp -R build/ /var/www/departure-board
+
+    # now configure your web server ...
+    ```
 
 ---
 
