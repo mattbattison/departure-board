@@ -1,3 +1,9 @@
+# Tube Station Departure Board
+
+![Departure board screenshot](./doc/departure-board.png)
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
