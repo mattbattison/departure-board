@@ -6,6 +6,13 @@ Dot-matrix-style departure board for any tube station, using data from [transpor
 
 ## Getting Started
 
+### Requirements
+
+- [yarn](https://yarnpkg.com) or [npm](https://npmjs.com)
+- a [transportapi](https://transportapi.com) account
+
+### Instructions
+
 1. Clone this repo (including submodules to make sure you get the fonts):
 
     ```
