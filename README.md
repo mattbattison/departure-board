@@ -1,6 +1,6 @@
 # Tube Station Departure Board
 
-Dot-matrix-style departure board for any tube station.
+Dot-matrix-style departure board for any tube station, using data from [transportapi](https://transportapi.com).
 
 ![Departure board screenshot](./doc/departure-board.png)
 
