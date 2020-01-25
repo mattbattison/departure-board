@@ -9,6 +9,6 @@ function appendKeys(url) {
 }
 
 export function getApiUrl(partialUrl) {
-  var fullUrl = process.env.REACT_APP_TRANSPORT_API_URL + partialUrl;
+  var fullUrl = process.env.REACT_APP_TRANSPORT_API_BASE_URL + partialUrl;
   return appendKeys(fullUrl);
 }
