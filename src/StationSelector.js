@@ -1,4 +1,5 @@
 import React from "react";
+import { getApiUrl } from "./ApiUtils";
 
 class StationSelector extends React.Component {
   lines = {
@@ -38,12 +39,7 @@ class StationSelector extends React.Component {
     var selectedLine = event.target.value !== "" ? event.target.value : null;
 
     if (selectedLine != null) {
-      fetch(
-        process.env.REACT_APP_TRANSPORT_API_URL +
-          "/v3/uk/tube/" +
-          selectedLine +
-          ".json"
-      )
+      fetch(getApiUrl("/v3/uk/tube/" + selectedLine + ".json"))
         .then(res => {
           if (!res.ok) {
             throw Error(res.statusText);

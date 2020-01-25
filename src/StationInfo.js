@@ -1,4 +1,5 @@
 import React from "react";
+import { getApiUrl } from "./ApiUtils";
 
 class StationInfo extends React.Component {
   constructor(props) {
@@ -23,11 +24,13 @@ class StationInfo extends React.Component {
     }
 
     fetch(
-      process.env.REACT_APP_TRANSPORT_API_URL + "/v3/uk/tube/" +
-        this.props.line +
-        "/" +
-        this.props.stationCode +
-        "/live.json"
+      getApiUrl(
+        "/v3/uk/tube/" +
+          this.props.line +
+          "/" +
+          this.props.stationCode +
+          "/live.json"
+      )
     )
       .then(res => {
         if (!res.ok) {
